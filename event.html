@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="button2">Hi</button>
+    <br>
+    <br>
+    <button id="button1" onclick="newClick(event)">Click me</button>
+    <script>
+       function newClick(event){
+        console.log("button clicked")
+       }
+
+       var button2 = document.getElementById('button2')
+       button2.addEventListener('click',function clickEvent(e){
+        console.log("new button clicked")
+        console.log(e)
+        console.log(e.target.id)
+        console.log(e.target.innerText)
+       })
+    </script>
+</body>
+</html>

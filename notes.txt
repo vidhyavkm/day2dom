@@ -1,0 +1,30 @@
+window util functions
+
+settimeout , setinterval=> to make JS from sync to async 
+
+settimeout:
+
+it will be implemented or executed after specific time.
+it will be executed only once.
+
+syntax: settimeout(function,delay)
+delay=> the timer(1000ms=1sec)
+
+arithmetic also can be performed in settimeout.
+
+cleartimeout:=> to stop settimeout.(rarely used)
+
+setinterval:
+we can call a same function again and again after certain time period
+setinterval(function, delay)
+
+alert, confirm, prompt
+
+alert=> wenever i open my browser a alert msg shown, it hS ONLY ONE OK BUTTON
+
+confrim=> wen browser open this also with two buttons(ok , cancel)
+
+prompt=> always ask a question to enter into the website.
+
+events=> in dom=> addeventlistener 
+syntax: addeventlistener('eventname',functionname)

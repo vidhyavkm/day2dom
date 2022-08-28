@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="counter"></div>
+    <script>
+        // setInterval(timer,4000)
+        // function timer(){
+        //     console.log("hello")
+        // }
+
+        // setInterval(()=>{
+        //     console.log("setinterval called")
+        // },4000)
+
+
+        
+//print 1 to 10 and then happy indepandence day using setinterval
+
+var timer = setInterval(count,1000)
+ let count1 = 0;
+ function count(){
+    count1++;
+    console.log(count1)
+    var target = document.getElementById('counter')
+    target.innerText=count1;
+    if(count1>=10){
+clearInterval(timer)
+    }
+    if(count1>=10){
+        console.log("HAPPY INDEPENDENCE DAY")
+        var target = document.getElementById('counter')
+    target.innerText="HAPPY INDEPENDENCE DAY";
+    }
+ }
+// var counter = document.getElementById('counter')
+//         for(let i=1; i<12; i++){
+//         setInterval(() => {
+            
+//         }, interval);(function(){
+//         //    i= i+1;
+//             counter.innerText= i
+//             if(i <=10){
+//                 console.log(i)}
+//                 else{
+//                 console.log("HAPPY INDEPENDENCE DAY")
+//                 counter.innerText="HAPPY INDEPENDENCE DAY"
+//             }
+//         },1000*i)
+//     }
+    </script>
+</body>
+</html>

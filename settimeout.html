@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #counter{
+            color: aqua;
+            text-align: center;
+            background-color: blueviolet;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="counter"></h1>
+    <script>
+        // setTimeout(timer,6000)
+        // function timer(){
+        //     console.log("timer function called")
+        // }
+
+        // setTimeout(timer1,3000)
+        // function timer1(){
+        //     console.log("timer1 function called")
+        // }
+
+        // setTimeout(timer2,2000)
+        // function timer2(){
+        //     console.log("timer2 function called")
+        // }
+
+        // setTimeout(() => {
+        //     console.log("timer has called")
+        // },4000)
+
+        // setTimeout(add,5000,30,50)
+        // function add(a,b){
+        //     console.log(a+b)
+        // }
+
+        //print 1 to 10 and then show happy independence day 
+
+
+        var counter = document.getElementById('counter')
+        for(let i=1; i<12; i++){
+        setTimeout(function(){
+        //    i= i+1;
+            counter.innerText= i
+            if(i <=10){
+                console.log(i)}
+                else{
+                console.log("HAPPY INDEPENDENCE DAY")
+                counter.innerText="HAPPY INDEPENDENCE DAY"
+            }
+        },1000*i)
+    }
+
+        
+
+
+
+    </script>
+</body>
+</html>

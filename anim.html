@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#test{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <button onclick="stopAnim()">Stop</button>
+    <script>
+       var id= setTimeout(anim,2000)
+        function anim(){
+            console.log("anim")
+var divi= document.getElementById('test')
+console.log(divi)
+divi.style.width="200px";
+divi.style.backgroundColor="pink"
+        }
+
+        function stopAnim(){
+            clearTimeout(id)
+            console.log("stop anim")
+        }
+    </script>
+</body>
+</html>

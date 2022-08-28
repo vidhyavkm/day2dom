@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            width:100px;
+            height: 100px;
+            background-color: aqua;
+        }
+            </style>
+        </head>
+        <body>
+            <div id="test"></div>
+            <!-- <button onclick="stopAnim()">Stop</button> -->
+            <script>
+              
+               var id= setInterval(anim,1000)
+               var a=0;
+                function anim(){
+                    a=a+10;
+                    if(a==100){
+                        clearInterval(id)
+                    }else{
+        var divi= document.getElementById('test')
+        divi.style.marginLeft= a+ "px"
+         console.log(a)
+                }
+        
+                // function stopAnim(){
+                //     clearInterval(id)
+                //     console.log("stop anim")
+                 }
+            </script>
+        </body>
+        </html>
